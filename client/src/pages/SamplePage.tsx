@@ -19,7 +19,7 @@ const SamplePage = ({id}:{id:number}) => {
                 //ここにwebsocketからのメッセージを解析する処理を記述
             },
         })
-    })
+    },[])
 
     return(
         <AppBox id={id} title="Sample Page">

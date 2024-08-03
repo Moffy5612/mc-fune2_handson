@@ -3,6 +3,7 @@ import "./css/App.css"
 import { createContext, useEffect, useState } from "react";
 import { AppPage } from "./types/AppPage";
 import { AppEffect } from "./types/AppEffect";
+import SamplePage from "./pages/SamplePage";
 
 const PageContext = createContext<AppPage | undefined>(undefined);
 
@@ -71,6 +72,9 @@ const App = () => {
          */}
 
          {/** @TODO ページの作成 */}
+
+
+         <SamplePage id={1}></SamplePage>
       </PageContext.Provider>
     </>
   )
