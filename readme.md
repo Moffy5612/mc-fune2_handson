@@ -1,7 +1,7 @@
 # MC-Fune2 機械制御システム ハンズオン
 
 ## 予めやっておくこと
-- ![node.js](https://nodejs.jp/)のインストール
+- [node.js](https://nodejs.jp/)のインストール
 - <作成したワールドのセーブフォルダ>/serverconfig/computercraft-server.tomlの
 以下の項目を変更する。
 
