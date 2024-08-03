@@ -16,7 +16,7 @@ const AppBox = ({id, title, children}: React.PropsWithChildren<{id:number, title
         <Box className={"page"+(hidden ? "":" page-shown")}>
             <header>
                 <h1>{title}</h1>
-                <ArrowBack className="back" fontSize="large" onClick={()=>{context?.setPage(0)}}/>
+                <ArrowBack className="back" fontSize="large" onClick={()=>{context?.setPageFn(0)}}/>
             </header>
             <Grid container spacing={2} className="app-content">
                 {children}
