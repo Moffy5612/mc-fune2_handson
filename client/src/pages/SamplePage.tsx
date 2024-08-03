@@ -2,7 +2,7 @@ import { Typography } from "@mui/material"
 import { addAppEffect, PageContext } from "../App"
 import AppBox from "../containers/AppBox"
 import AppTab from "../containers/AppTab"
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 
 /*
     コンポーネント一覧はこちら: https://mui.com/material-ui/all-components/
@@ -12,11 +12,13 @@ const SamplePage = ({id}:{id:number}) => {
 
     const context = useContext(PageContext) //page: ページ番号, setPageFn: ページ番号を設定する関数, isMobile: スマホから見ているかどうか
 
-    addAppEffect({
-        id: id,
-        applyEffect(ws, data) {
-            //ここにwebsocketからのメッセージを解析する処理を記述
-        },
+    useEffect(()=>{
+        addAppEffect({
+            id: id,
+            applyEffect(ws, data) {
+                //ここにwebsocketからのメッセージを解析する処理を記述
+            },
+        })
     })
 
     return(
